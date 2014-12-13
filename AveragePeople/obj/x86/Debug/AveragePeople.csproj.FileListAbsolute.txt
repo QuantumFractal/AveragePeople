@@ -1,0 +1,14 @@
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\SDL.dll
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\AveragePeople.exe
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\AveragePeople.pdb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Lidgren.Network.dll
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\MonoGame.Framework.dll
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\OpenTK.dll
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Tao.Sdl.dll
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\obj\x86\Debug\AveragePeople.csprojResolveAssemblyReference.cache
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\obj\x86\Debug\AveragePeople.exe
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\obj\x86\Debug\AveragePeople.pdb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\grass.xnb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\stone.xnb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\walking.xnb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\guy.xnb
