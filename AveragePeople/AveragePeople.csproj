@@ -72,6 +72,9 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="Content\AveragePeopleContent.mgcb" />
+    <None Include="Content\bush.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Content\grass.xnb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

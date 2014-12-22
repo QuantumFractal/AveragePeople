@@ -20,7 +20,10 @@ namespace AveragePeople
         public Texture2D texture { get; set; }
         public Dictionary<String, Animation> animations;
         public enum States { walking, standing };
+        public enum Direction { north, east, south, west };
+        Direction direction;
         States personState;
+        
 
         public Person(String givenName, Vector2 givenPosition, Texture2D givenTexture)
         {
@@ -29,6 +32,7 @@ namespace AveragePeople
             texture = givenTexture;
             animations = new Dictionary<String, Animation>();
             personState = States.standing;
+            direction = Direction.east;
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -37,7 +41,11 @@ namespace AveragePeople
             //spriteBatch.Draw(texture, pos, Color.White);
             if(personState == States.standing)
             {
-                spriteBatch.Draw(texture, pos, Color.White);
+                if(direction == Direction.west)
+                    spriteBatch.Draw(texture, pos, new Rectangle(0,0,32,32), Color.White, 0.0f, new Vector2(0, 0), 1.0f, SpriteEffects.FlipHorizontally, 1.0f);
+
+                else
+                    spriteBatch.Draw(texture, pos, Color.White);
             }
 
             else if(personState == States.walking)
@@ -46,7 +54,12 @@ namespace AveragePeople
 
                 Vector2 origin = new Vector2(animations["walking"].frameSize.X / 2.0f, animations["walking"].frameSize.Y);
 
-                spriteBatch.Draw(animations["walking"].spriteMap, pos, source, Color.White);
+
+                if(direction == Direction.west)
+                    spriteBatch.Draw(animations["walking"].spriteMap, pos, source, Color.White, 0.0f, new Vector2(0, 0), 1.0f, SpriteEffects.FlipHorizontally, 1.0f);
+                else
+                    spriteBatch.Draw(animations["walking"].spriteMap, pos, source, Color.White, 0.0f, new Vector2(0, 0), 1.0f, SpriteEffects.None, 1.0f);
+
             }
 
         }
@@ -57,9 +70,36 @@ namespace AveragePeople
             if(keyboard.IsKeyDown(Keys.D))
             {
                 personState = States.walking;
+                direction = Direction.east;
                 pos = new Vector2(pos.X + 1, pos.Y);
             }
-            if(keyboard.IsKeyUp(Keys.D))
+
+            if (keyboard.IsKeyDown(Keys.A))
+            {
+                personState = States.walking;
+                direction = Direction.west;
+                pos = new Vector2(pos.X - 1, pos.Y);
+            }
+
+            if (keyboard.IsKeyDown(Keys.S))
+            {
+                personState = States.walking;
+                //direction = Direction.south;
+                pos = new Vector2(pos.X, pos.Y + 1);
+            }
+
+            if (keyboard.IsKeyDown(Keys.W))
+            {
+                personState = States.walking;
+                //direction = Direction.north;
+                pos = new Vector2(pos.X, pos.Y - 1);
+            }
+
+
+            if(keyboard.IsKeyUp(Keys.D) && 
+               keyboard.IsKeyUp(Keys.A) &&
+               keyboard.IsKeyUp(Keys.S) &&
+               keyboard.IsKeyUp(Keys.W))
             {
                 personState = States.standing;
             }

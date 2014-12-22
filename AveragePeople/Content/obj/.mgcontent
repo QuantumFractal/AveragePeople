@@ -4,6 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>E:/Programming/!Visual Studio Projects/AveragePeople/AveragePeople/Content/bush.png</File>
     <File>E:/Programming/!Visual Studio Projects/AveragePeople/AveragePeople/Content/grass.png</File>
     <File>E:/Programming/!Visual Studio Projects/AveragePeople/AveragePeople/Content/guy.png</File>
     <File>E:/Programming/!Visual Studio Projects/AveragePeople/AveragePeople/Content/stone.png</File>

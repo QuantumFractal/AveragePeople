@@ -12,3 +12,4 @@ E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL
 E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\stone.xnb
 E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\walking.xnb
 E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\guy.xnb
+E:\Programming\!Visual Studio Projects\AveragePeople\AveragePeople\bin\WindowsGL\Debug\Content\bush.xnb
