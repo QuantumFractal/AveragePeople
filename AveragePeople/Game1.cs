@@ -62,6 +62,8 @@ namespace AveragePeople
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
+            //Load your content here
+
             world.tileSprites.Add("grass", Content.Load<Texture2D>("grass"));
             world.tileSprites.Add("stone", Content.Load<Texture2D>("stone"));
 
