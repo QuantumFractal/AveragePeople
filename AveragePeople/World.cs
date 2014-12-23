@@ -50,7 +50,7 @@ namespace AveragePeople
             tileSet.Add("stone", new Tile(size, tileSprites["stone"]));
 
 
-            personList.Add(new Person("guy", new Vector2(100,100), personSprites["guy"]));
+            personList.Add(new Person("guy", new Vector2(100.0f,100.0f), personSprites["guy"]));
 
             guyAnimation = new Animation(animationMaps["guy_walking"], new Vector2(32, 32), 4);
             personList[0].animations.Add("walking", guyAnimation);
